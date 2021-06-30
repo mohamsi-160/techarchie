@@ -1,0 +1,43 @@
+<section class="section section-preq rounded">
+  <div class="container rounded pt-0 preq-container bg-light">
+    <div class="row pt-0 preq-contents rt-header">
+      <div class="col-6 col-md-4 preq-col">
+        <p><b>Pre-requisites</b><br/>
+        Development Tools</p>
+      </div>
+    </div>
+
+    <div class="row pt-0 preq-contents rt-body">
+
+      <div class="col-6 col-md-4 preq-col">
+        <div class="d-flex align-items-center">
+            <span class="sol-pr"><img src="{{solutionPreReqs_IDE_Icon}}" alt="" class="rounded-circle shadow sol-pr-icon" /></span>
+            <span class="sol-pr bold"><span class="sol-pr-text">IDE</span></span>
+        </div>
+        <span *ngFor="let item of solutionPreReqs_IDE; index as i;">
+           {{item.Description}}<span *ngIf="i < solutionPreReqs_IDE.length-1">,</span>
+         </span>
+      </div>
+
+      <div class="col-6 col-md-4 preq-col">
+        <div class="d-flex align-items-center">
+            <span class="sol-pr"><img src="{{solutionPreReqs_Shell_Icon}}" alt="" class="rounded-circle shadow sol-pr-icon" /></span>
+            <span class="sol-pr bold"><span class="sol-pr-text">Shell</span></span>
+        </div>
+        <span *ngFor="let item of solutionPreReqs_Shell; index as i;">
+         {{item.Description}}<span *ngIf="i < solutionPreReqs_Shell.length-1">,</span>
+        </span>
+      </div>
+
+      <div class="col-6 col-md-4 preq-col">
+        <div class="d-flex align-items-center">
+            <span class="sol-pr"><img src="{{solutionPreReqs_SourceControl_Icon}}" alt="" class="rounded-circle shadow sol-pr-icon" /></span>
+            <span class="sol-pr bold"><span class="sol-pr-text">Source Control</span></span>
+        </div>
+        <span *ngFor="let item of solutionPreReqs_SourceControl; index as i;">
+          {{item.Description}}<span *ngIf="i < solutionPreReqs_SourceControl.length-1">,</span>
+         </span>
+      </div>
+    </div>
+  </div>
+</section>

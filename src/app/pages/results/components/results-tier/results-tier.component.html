@@ -1,0 +1,55 @@
+<!-- <section class="section block bg-contrast">
+   <div class="container py-4">
+      <div class="row gap-y align-items-center">
+         <div class="col-md-3" *ngFor="let plan of plans">
+            <div class="bg-info-gradient py-3 rounded text-contrast shadow pricing text-center tier-item">
+               <h2 class="bold text-contrast">{{ plan.plan.name }}</h2>
+               <h5 class="text-contrast">{{ plan.plan.description }}</h5>
+               <ul class="list-unstyled ti-body" *ngFor="let feature of plan.features">
+                  <li>
+                    <img src="https://icons-for-free.com/iconfiles/png/512/group+people+team+users+icon-1320196240876938595.png" class="avatar-icon" />
+                    {{ feature.name }}
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+</section> -->
+
+<!-- <section> -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 results-tier-cont" *ngFor="let plan of plans">
+        <div [class]="'tier-item text-center ' + plan.best">
+          <div class="pricing d-flex flex-column rt-header ti-header">
+            <h5 class="bold text-contrast">{{ plan.plan.name }}</h5>
+            <h5 class="text-contrast">{{ plan.plan.description }}</h5>
+            <!-- <p class="bold text-contrast">{{ plan.plan.description }}</p> -->
+          </div>
+          <div class="pricing d-flex flex-column rt-body ti-body">
+            <p class="text-contrast">{{ plan.plan.notes }}</p>
+            <ul class="list-group list-group-flush rt-body">
+              <li class="list-group-item rt-body ti-body" *ngFor="let feature of plan.features">
+                <img src="https://icons-for-free.com/iconfiles/png/512/group+people+team+users+icon-1320196240876938595.png" class="avatar-icon" />
+                {{ feature.name }}
+              </li>
+            </ul>
+          </div>
+
+          <!-- <div class="card-body">
+            <a
+              href="javascript:;"
+              class="btn {{
+                plan.best ? 'btn-primary' : 'btn-outline-secondary'
+              }}"
+            >
+              Buy now
+            </a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

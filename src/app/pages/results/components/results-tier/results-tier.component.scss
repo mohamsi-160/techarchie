@@ -1,0 +1,66 @@
+.results-tier-cont {
+  padding-left: 0px;
+  padding-right: 5px;
+}
+
+
+.tier-item {
+  .ti-header {
+    padding-top: 10px;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .ti-body {
+    text-align: left;
+    padding-left: 15px;
+    color: white;
+  }
+}
+
+
+
+.avatar-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.users {
+  .rt-header {
+    background-color: #B84E4E;
+  }
+
+  .rt-body {
+    background-color: #ed7979;
+  }
+}
+
+.frontend {
+  .rt-header {
+    background-color: #23a1db;
+  }
+
+  .rt-body {
+    background-color: #3dc2ff;
+  }
+}
+
+.middleware {
+  .rt-header {
+    background-color: #b88c02;
+  }
+
+  .rt-body {
+    background-color: #ffc409;
+  }
+}
+
+.backend {
+  .rt-header {
+    background-color: #40a869;
+  }
+
+  .rt-body {
+    background-color: #42d77d;
+  }
+}

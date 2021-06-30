@@ -1,0 +1,30 @@
+<section class="section bg-contrast edge bottom-right latest-projects">
+  <div class="container bring-to-front pt-0">
+    <div class="shadow-lg bg-contrast rounded">
+      <div class="bg-contrast rounded-bottom p-4">
+        <p class="bold lead my-0">Latest updates</p>
+        <p class="text-muted my-0">
+          Here are some of the recent additions to the technology stack.
+        </p>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-6 col-md-4" *ngFor="let image of images; let i = index">
+          <div class="project-detail blanket blanket-secondary">
+            <a href="javascript:;">
+              <img
+                [src]="image.url"
+                alt=""
+              />
+              <div class="description bg-dark text-contrast p-1 p-md-2">
+                <p class="bold">{{image.name}}</p>
+                <p class="text-muted">
+                  {{image.desc}}
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

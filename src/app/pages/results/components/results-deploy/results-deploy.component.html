@@ -1,0 +1,32 @@
+<section class="section section-deploy rounded">
+  <div class="container rounded pt-0 deploy-container bg-light">
+    <div class="row pt-0 deploy-contents rt-header">
+      <div class="col-6 col-md-4 deploy-col">
+        <p><b>Deployment</b><br/>
+        Environment</p>
+      </div>
+    </div>
+
+    <div class="row pt-0 deploy-contents rt-body">
+      <div class="col-6 col-md-4 deploy-col" *ngFor="let item of solutionDeployment; index as i;">
+        <!-- <div class="d-flex align-items-center">
+          <dc-feather
+            [name]="c.icon"
+            [iconClass]="'stroke-primary mr-2'"
+          ></dc-feather>
+          <span class="counter bold" [countUp]="c.value">{{c.value}}</span>
+        </div>
+        <p class="m-0">{{ c.title }}</p> -->
+        <div class="col-6 col-md-4 preq-col">
+          <div class="d-flex align-items-center">
+              <span class="sol-pr"><img src="{{item.IconUrl}}" alt="" class="rounded-circle shadow sol-pr-icon" /></span>
+              <span class="sol-pr bold"><span class="sol-pr-text">Infrastructure  </span></span>
+          </div>
+          <div>
+            {{item.Description}}
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

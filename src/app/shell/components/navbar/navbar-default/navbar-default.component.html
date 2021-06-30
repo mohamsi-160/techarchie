@@ -1,0 +1,36 @@
+<dc-navbar-shell
+  [darkLinks]="darkLinks"
+  [useOnlyDarkLogo]="darkLinks ? true : useOnlyDarkLogo"
+>
+  <ul class="nav navbar-nav" [class.ml-auto]="isRightPositioned()">
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/home']">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/about']">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/contact']">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/faqs']">Faqs</a>
+    </li>
+  </ul>
+
+  <!-- <nav class="nav navbar-nav justify-content-center mt-4 mt-md-0 flex-row"
+    [ngClass]="{ 'ml-md-auto': !isRightPositioned() }">
+    <a class="btn btn-rounded btn-outline mr-3 px-3" [routerLink]="['/auth/login']">
+      <fa-icon
+        [icon]="signInAlt"
+        class="d-none d-md-inline mr-md-0 mr-lg-2"></fa-icon>
+      <span class="d-md-none d-lg-inline">Login</span>
+    </a>
+    <a class="btn btn-rounded btn-solid px-3" [routerLink]="['/auth/register']">
+      <fa-icon
+        [icon]="userPlus"
+        class="d-none d-md-inline mr-md-0 mr-lg-2"
+      ></fa-icon>
+      <span class="d-md-none d-lg-inline">Signup</span>
+    </a>
+  </nav> -->
+</dc-navbar-shell>

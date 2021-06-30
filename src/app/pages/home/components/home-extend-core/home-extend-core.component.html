@@ -1,0 +1,59 @@
+<section class="section extending-core border-top bg-light edge bottom-right">
+  <div class="shapes-container">
+    <div class="shape shape-circle">
+      <div></div>
+    </div>
+  </div>
+  <div class="container pb-9">
+    <div class="row gap-y align-items-center">
+      <div class="col-lg-6">
+        <div class="section-heading">
+          <p class="text-primary bold small text-uppercase">
+            technology stack
+          </p>
+          <h2>Community Support</h2>
+          <p>
+            We are a group of technology enthusiasts who have been working in IT for past 2 decades. We have worked in various areas of IT including software development, application support, technical & solution architecture. We were always looking ways to give back to tech community and we created TechArch with the view to help the community.
+          </p>
+          <p>
+            We have build this tool for technology geeks including software engineers, software developers, software architects, technical leads, development managers and all tech enthusiasts.
+          </p>
+          <p>
+            If you have are passionate about technology and wanted to contribute, we are always open for contributors who want to enhance, critique and direct the product.
+          </p>
+          <p>
+            If you are unable to find a specific technology complete
+            the form below and we will update out database in next 48hrs.
+          </p>
+        </div>
+        <!-- <a href="#" class="btn btn-rounded btn-outline-primary bw-2 mr-3"
+          >Know More</a
+        > -->
+
+        <!-- <a href="#" class="btn btn-rounded btn-primary bw-2 bold text-contrast">Submit request</a> -->
+      </div>
+
+      <div class="col-lg-6">
+        <div class="icons-wrapper position-relative">
+          <div
+            class="floating icon {{
+              icon.size
+            }} bg-contrast rounded-circle p-3 shadow m-0 absolute d-flex justify-content-center align-items-center"
+            *ngFor="let icon of icons"
+            [ngStyle]="{
+              'left.%': icon.position.left,
+              'top.%': icon.position.top
+            }"
+            data-aos="fade-left"
+          >
+            <img
+              [src]="'assets/img/integration/' + icon.name + '.svg'"
+              class="img-responsive"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
